@@ -1,14 +1,18 @@
 <?php
 class Category {
-    public $productCategory;
 
-    function __construct($productCategory)
-    {
-        $this->productCategory = $productCategory;
+    public $name;
+    public $icon;
+
+    function __construct($_name, $_icon) {
+        $this->name = $_name;
+        $this->icon = $_icon;
     }
 
-    public function getProductCategory() {
-        $result = $this->productCategory;
-        return $result;
+    public function get_name(){
+        return $this->name;
+    }
+    public function get_icon(){
+        return $this->icon;
     }
 }

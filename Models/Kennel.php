@@ -4,6 +4,7 @@ require_once __DIR__.'/Product.php';
 class Kennel extends Product {
     public $size;
     public $color;
+    public $type = 'Kennel';
 
     function __construct($_image, $_title, $_price, Category $_category, $_size, $_color) 
     {
