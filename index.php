@@ -36,6 +36,7 @@ require_once __DIR__ . '/Database/db.php';
                             <h6>Tipo: <?php echo $product->type; ?></h6>
                             <h6 class="card-text"><?php echo isset($product->size) ? "Misure: " . $product->size : ""; ?></h6>
                             <h6 class="card-text"><?php echo isset($product->color) ?  "Colore: " . $product->color : ""; ?></h6>
+                            <h6>Disponibilità: <?php echo $product->availability; ?></h6>
                         </div>
                     </div>
                 </div>

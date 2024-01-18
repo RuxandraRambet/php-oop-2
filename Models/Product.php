@@ -7,9 +7,7 @@ class Product {
     public $title;
     public $price;
     public $category;
-    public $type = 'Default';
     
-
     function __construct($_image, $_title, $_price, Category $_category)
     {
         $this->image = $_image;
@@ -19,6 +17,6 @@ class Product {
     }
 
     public function get_product_type(){
-        return get_class();
+        return get_class($this);
     }
 }
